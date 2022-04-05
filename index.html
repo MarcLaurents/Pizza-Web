@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><h1>Pizza Shop</h1></li>
+        <li><h2>The Best Pizza</h2></li>
+      </ul>
+    </header>
+    <section>
+      <form>
+        <ul>
+          <h3>Select the selling pizza</h3>
+          <li>
+            <input type="radio" id="mussarela" name="pizzas" /><label
+              for="mussarela"
+              >Mussarela</label
+            >
+          </li>
+          <li>
+            <input type="radio" id="mix" name="pizzas" /><label for="mix"
+              >Mix</label
+            >
+          </li>
+          <li>
+            <input type="radio" id="pepperoni" name="pizzas" /><label
+              for="pepperoni"
+              >Pepperoni</label
+            >
+          </li>
+        </ul>
+      </form>
+    </section>
+
+    <section>
+      <button id="sellButton">Sell</button>
+      <button id="retriveButton">Retrive</button>
+    </section>
+
+    <section id="table">
+      <table>
+        <tr>
+          <th>Type</th>
+          <th>Quantity</th>
+          <th>Prices</th>
+        </tr>
+        <tr>
+          <td>Mussarela</td>
+          <td id="quantityMussarela"></td>
+          <td id="soldMussarela"></td>
+        </tr>
+        <tr>
+          <td>Mix</td>
+          <td id="quantityMix"></td>
+          <td id="soldMix"></td>
+        </tr>
+        <tr>
+          <td>Pepperoni</td>
+          <td id="quantityPepperoni"></td>
+          <td id="soldPepperoni"></td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <button id="exportButton">Sheet</button>
+    </section>
+
+    <script src="tableToExcel.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
